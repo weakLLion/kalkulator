@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator - Syarief</title>
+
+  <!-- ICON -->
+  <link rel="icon" href="/assets/s.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+
+    <!-- Navigation -->
+    <nav>
+      <div class="box">
+        <h3>Luas Segitiga</h3>
+        <button onclick="Triangle()">CLICK</button>
+      </div>
+      <div class="box">
+        <h3>Luas Jajargenjang</h3>
+        <button onclick="Parallelogram()">CLICK</button>
+      </div>
+      <div class="box">
+        <h3>Luas Lingkaran</h3>
+        <button onclick="warn()">CLICK</button>
+      </div>
+      <div class="box">
+        <h3>Luas Persegi</h3>
+        <button onclick="warn()">CLICK</button>
+      </div>
+    </nav>
+    <ul class="menu">
+      <li>
+        <a href="#">Contact Me</a>
+        <ul class="dropdown">
+          <li><a href="tel:+6289502733339" id="phone">Phone</a></li>
+          <li><a href="https://instagram.com/rangga_nir" id="ig">Instagram</a></li>
+          <li><a href="https://wa.me/6289502733339?text=Hallo!" id="whatsapp">Whatsapp</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="menu">
+      <li><a href="/index.html">Back</a></li>
+    </ul>
+  </header>
+
+  <!-- Main content -->
+  <div class="mobile">
+    <h1>MOBILE VERSION COMING SOON</h1>
+  </div>
+  <main>
+    <div class="content" id="empty">
+      <div class="box">
+        <center>
+          <h3>Selamat Datang!</h3>
+        </center>
+      </div>
+    </div>
+    <form action="#">
+      <div class="content hidden" id="Triangle">
+        <h3>Luas Segitiga</h3>
+        <div class="box">
+          <p>Rumus Luas Segitiga : 1/2 * alas * tinggi</p>
+          <label for="TrianglePedestal">Masukan Alas Segitiga</label>
+          <input type="number" id="TrianglePedestal" placeholder="masukan alas">
+          <label for="TriangleHeight">Masukan Tinggi Segitiga</label>
+          <input type="number" id="TriangleHeight" placeholder="masukan tinggi">
+          <button onclick="TriangleArea()">Count</button>
+          <button type="reset">Reset</button>
+          <input type="text" readonly id="TriangleResult">
+          <input type="text" readonly id="TriangleWay">
+        </div>
+      </div>
+
+      <div class="content hidden" id="Parallelogram">
+        <h3>Luas Jajargenjang</h3>
+        <div class="box">
+          <p>Rumus Luas Jajargenjang : alas * tinggi</p>
+          <label for="ParallelogramPedestal">Masukan Alas Jajargenjang</label>
+          <input type="number" id="ParallelogramPedestal" placeholder="masukan alas">
+          <label for="ParallelogramHeight">Masukan Tinggi Jajargenjang</label>
+          <input type="number" id="ParallelogramHeight" placeholder="masukan tinggi">
+          <button onclick="ParallelogramArea()">Count</button>
+          <button type="reset">Reset</button>
+          <input type="text" readonly id="ParallelogramResult">
+          <input type="text" readonly id="ParallelogramWay">
+        </div>
+      </div>
+  </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    Copyright &copy; Syarief. All Right Reversed.
+  </footer>
+  <script src="script/index.js"></script>
+</body>
+</html>
